@@ -1,5 +1,6 @@
 # 🚌 **COMO CHEGAR NA UFSJ**
-
+**Consulta de horários das linhas universitárias de forma simples**
+##
 **O que o sistema faz**
 
 - Filtro por **bairro**
