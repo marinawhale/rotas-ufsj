@@ -46,46 +46,47 @@ function App() {
   }, [bairro, ponto]);
 
   return (
-    <div className="container">
-      <h1>Como chegar na UFSJ</h1>
-      <p>Veja horários de ônibus e encontre o melhor trajeto a partir do seu bairro</p>
+    <div>
+      <div className="container">
+        <h1>Como chegar na UFSJ</h1>
+        <p>Veja horários de ônibus e encontre o melhor trajeto a partir do seu bairro</p>
 
-      <div className="filters-wrapper">
-        <div className="filter-group">
-          <label>Bairro</label>
-          <select value={bairro} onChange={(e) => { setBairro(e.target.value); setPonto(""); }}>
-            <option value="">Todos os bairros</option>
-            {bairros.map((b, i) => <option key={i} value={b}>{b}</option>)}
-          </select>
-        </div>
-
-        <div className="filter-group">
-          <label>Ponto de Parada</label>
-          <select value={ponto} onChange={(e) => setPonto(e.target.value)}>
-            <option value="">Todos os pontos</option>
-            {pontosFiltrados.map((p, i) => <option key={i} value={p}>{p}</option>)}
-          </select>
-        </div>
-      </div>
-
-      <div className="results-container">
-        {resultados.length === 0 && <p className="no-results">Busque um destino acima.</p>}
-
-        {resultados.map((item, index) => (
-          <div key={index} className="card">
-            <h3>{item.ponto}</h3>
-            <p><strong>Bairro:</strong>
-              <span>{item.bairro}</span></p>
-            <p><strong>Horários:</strong>
-              <span>{item.horarios.join(", ")}</span></p>
-            <p className="next-bus">
-              <strong>Próximo ônibus:</strong>
-              <span>{proximoHorario(item.horarios)}</span>
-            </p>
+        <div className="filters-wrapper">
+          <div className="filter-group">
+            <label>Bairro</label>
+            <select value={bairro} onChange={(e) => { setBairro(e.target.value); setPonto(""); }}>
+              <option value="">Todos os bairros</option>
+              {bairros.map((b, i) => <option key={i} value={b}>{b}</option>)}
+            </select>
           </div>
-        ))}
-      </div>
 
+          <div className="filter-group">
+            <label>Ponto de Parada</label>
+            <select value={ponto} onChange={(e) => setPonto(e.target.value)}>
+              <option value="">Todos os pontos</option>
+              {pontosFiltrados.map((p, i) => <option key={i} value={p}>{p}</option>)}
+            </select>
+          </div>
+        </div>
+
+        <div className="results-container">
+          {resultados.length === 0 && <p className="no-results">Busque um destino acima.</p>}
+
+          {resultados.map((item, index) => (
+            <div key={index} className="card">
+              <h3>{item.ponto}</h3>
+              <p><strong>Bairro:</strong>
+                <span>{item.bairro}</span></p>
+              <p><strong>Horários:</strong>
+                <span>{item.horarios.join(", ")}</span></p>
+              <p className="next-bus">
+                <strong>Próximo ônibus:</strong>
+                <span>{proximoHorario(item.horarios)}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="footer">
         <p>
           Este projeto não possui vínculo oficial com a empresa de transporte Turin.
