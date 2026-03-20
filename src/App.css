@@ -1,11 +1,11 @@
 * {
-  box-sizing: border-box; /* Fundamental para que o width: 100% não estoure com padding */
+  box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0; /* Essencial para encostar nas bordas */
+  padding: 0;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden; /* Garante que nada escape para a direita */
+  overflow-x: hidden;
   background: var(--bg);
 }
 
@@ -44,10 +44,10 @@ body {
 
 .container {
   width: 100%;
-  max-width: 720px; /* Largura máxima desejada */
-  margin: 0 auto;   /* CENTRALIZA horizontalmente */
+  max-width: 720px;
+  margin: 0 auto;
   padding: 20px;
-  flex: 1 0 auto;   /* Faz o conteúdo crescer e empurrar o footer para baixo */
+  flex: 1 0 auto;
 }
 
 .container p {
@@ -199,12 +199,11 @@ select:focus {
   width: 100%;
   margin: 0;
   padding: 25px 0;
-  background-color: #1a202c; /* Ajuste conforme seu tema */
+  background-color: #1a202c;
   color: #e2e8f0;
   text-align: center;
-  flex-shrink: 0; /* Impede o footer de encolher */
+  flex-shrink: 0;
   
-  /* Garante que ele encoste no fundo e lados */
   position: relative; 
   left: 0;
   bottom: 0;
@@ -212,7 +211,7 @@ select:focus {
 
 .footer-content {
   width: 100%;
-  max-width: 720px; /* Alinhado com a largura do seu conteúdo */
+  max-width: 720px;
   margin: 0 auto;
   padding: 0 20px;
 }
