@@ -85,6 +85,41 @@ function App() {
           </div>
         ))}
       </div>
+
+      <div className="footer">
+        <p>
+          Este projeto não possui vínculo oficial com a empresa de transporte Turin.
+        </p>
+
+        <p>
+          Informações baseadas na{" "}
+          <a
+            href="https://docs.google.com/spreadsheets/d/1d3N5OjRiHvQ6W8pXAhi7KBJ0vXMML9ehhozrim0OtFw/edit?fbclid=IwAR1aDXPauZftm_R5ePL0rtscbQ449saoxDORcnaJdw1bC-B8CzPvRRDtM6c#gid=1923072537"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            planilha oficial da Turin
+          </a>
+        </p>
+
+        <p className="footer-author">
+          Criado por: <strong>Marina Ferrari Monteiro</strong>
+        </p>
+
+        <div className="footer-icons">
+          <a href="https://github.com/marinawhale" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/marina-ferrari-b10456244/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:marinaferrarim@gmail.com">
+            <i className="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

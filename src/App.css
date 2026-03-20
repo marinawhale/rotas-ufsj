@@ -1,15 +1,22 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
 :root {
   --turin-green: #61ce70;
   --turin-dark-green: #248a33;
   --turin-gray-bg: #d4ddd6;
   --turin-text-header: #54595f;
-  
+
   --bg: #f9fafb;
   --text: #4a5568;
   --text-h: #1a202c;
   --border: #e2e8f0;
   --code-bg: #f8fafc;
-  
+
   --accent: var(--turin-green);
   --accent-bg: var(--turin-green);
   --accent-text: #ffffff;
@@ -25,9 +32,12 @@
 
 .container {
   max-width: 720px;
-  margin: 0 auto;
   padding: 16px;
-  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
 }
 
 .container p {
@@ -95,7 +105,7 @@ select {
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 16px;
-  
+
   border: 2px solid #e5e7eb;
   border-radius: 10px;
   padding: 14px 40px 14px 14px;
@@ -117,6 +127,8 @@ select:focus {
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  flex: 1;
 }
 
 .no-results {
@@ -136,7 +148,7 @@ select:focus {
   overflow: hidden;
 
   transition: all 0.25s ease;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
   padding-bottom: 30px;
   margin-bottom: 10px;
 }
@@ -166,11 +178,59 @@ select:focus {
   font-weight: 600;
 
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   padding: 0 10px;
   min-height: 28px;
   gap: 6px
+}
+
+.footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: calc(-50vw + 50%);
+  margin-top: 30px;
+
+  padding: 25px 15px;
+
+  background-color: #ffffff;
+  color: #4a5568;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: var(--turin-dark-green);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icons a {
+  color: #4a5568;
+}
+
+.footer-icons a:hover {
+  color: #61ce70;
+  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
@@ -208,7 +268,7 @@ select:focus {
     --text: #94a3b8;
     --text-h: #f1f5f9;
     --border: #1e293b;
-    
+
     --turin-green: #4ade80;
     --turin-gray-bg: #1e293b;
     --turin-text-header: #f8fafc;
@@ -222,6 +282,19 @@ select:focus {
 
   .card h3 {
     color: #4ade80;
+  }
+
+  .footer {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
+
+  .footer a {
+    color: #4ade80;
+  }
+
+  .footer-icons a {
+    color: #e2e8f0;
   }
 
   select {
