@@ -1,0 +1,232 @@
+:root {
+  --turin-green: #61ce70;
+  --turin-dark-green: #248a33;
+  --turin-gray-bg: #d4ddd6;
+  --turin-text-header: #54595f;
+  
+  --bg: #f9fafb;
+  --text: #4a5568;
+  --text-h: #1a202c;
+  --border: #e2e8f0;
+  --code-bg: #f8fafc;
+  
+  --accent: var(--turin-green);
+  --accent-bg: var(--turin-green);
+  --accent-text: #ffffff;
+
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --heading: 'Inter', sans-serif;
+
+  font: 16px/1.6 var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+  align-items: center;
+}
+
+.container p {
+  letter-spacing: 0.5px;
+  color: var(--turin-text-header);
+  padding: 6px 0 15px 0;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  border-radius: 12px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: var(--turin-gray-bg);
+  color: var(--turin-text-header);
+  padding: 24px 16px;
+  margin: 0 0 12px 0;
+  font-weight: 900;
+  border-radius: 12px;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  h1 {
+    background: var(--turin-dark-green);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(36, 138, 51, 0.2);
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  color: var(--turin-dark-green);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2354595f'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px 40px 14px 14px;
+  color: var(--turin-text-header);
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--turin-green);
+  box-shadow: 0 0 0 4px rgba(97, 206, 112, 0.15);
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid var(--turin-green);
+  border-left: 6px solid var(--turin-dark-green);
+  padding: 20px;
+  border-radius: 14px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card h3 {
+  color: var(--turin-dark-green);
+  margin-bottom: 6px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.card p {
+  color: var(--text);
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.next-bus {
+  border-radius: 8px;
+  background: var(--turin-gray-bg);
+  font-size: 14px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 28px;
+  gap: 6px
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .filters-wrapper {
+    flex-direction: row;
+  }
+
+  .filter-group {
+    flex: 1;
+  }
+
+  .results-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+    padding: 28px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1120;
+    --text: #94a3b8;
+    --text-h: #f1f5f9;
+    --border: #1e293b;
+    
+    --turin-green: #4ade80;
+    --turin-gray-bg: #1e293b;
+    --turin-text-header: #f8fafc;
+  }
+
+  .card {
+    background: rgba(74, 222, 128, 0.05);
+    border: 1px solid rgba(74, 222, 128, 0.2);
+    border-left: 6px solid var(--turin-dark-green);
+  }
+
+  .card h3 {
+    color: #4ade80;
+  }
+
+  select {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f1f5f9;
+  }
+}

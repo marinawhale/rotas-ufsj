@@ -1,0 +1,82 @@
+[
+  {
+    "bairro": "Centro",
+    "ponto": "Rodoviária",
+    "horarios": ["11:10", "12:10", "14:10", "16:10", "18:00", "20:00"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Pasteleão",
+    "horarios": ["11:11","12:11","14:11","16:11","18:01","20:01"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Caixa Econômica",
+    "horarios": ["11:13","12:13","14:13","14:13","18:03","20:03"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Arena FUT 07",
+    "horarios": ["11:12", "12:12", "14:12", "16:12", "18:02", "20:06"]
+  },
+  {
+    "bairro": "Siderurgia",
+    "ponto": "Av. Consider (Mercadinho Hortão)",
+    "horarios": ["11:13", "12:13", "14:13", "16:13", "18:04", "20:07"]
+  },
+  {
+    "bairro": "Siderurgia",
+    "ponto": "Avenida Patriótica - Sindicato dos Metalurgicos",
+    "horarios": ["11:16", "12:16", "14:16", "16:16", "18:07", "20:08"]
+  },
+  {
+    "bairro": "Siderurgia",
+    "ponto": "Av Barão de Eschwege - Papelaria RED'S",
+    "horarios": ["11:17", "12:17", "14:17", "16:17", "18:08", "20:09"]
+  },
+  {
+    "bairro": "Pioneiros",
+    "ponto": "Av Barão de Eschwege - Padaria Diniz",
+    "horarios": ["11:18", "12:18", "14:18", "16:18", "18:09", "20:11"]
+  },
+  {
+    "bairro": "Pioneiros",
+    "ponto": "Av João Monlevade - Alternativa",
+    "horarios": ["11:20", "12:20", "14:20", "16:20", "18:11", "20:13"]
+  },
+  {
+    "bairro": "Pioneiros",
+    "ponto": "Av João Monlevade - Fio de Seda",
+    "horarios": ["11:22", "12:22", "14:22", "16:22", "18:13", "20:14"]
+  },
+  {
+    "bairro": "Inconfidentes",
+    "ponto": "Av Cônego Luiz Vieira",
+    "horarios": ["11:23", "12:23", "14:23", "16:23", "18:15", "20:16"]
+  },
+  {
+    "bairro": "Inconfidentes",
+    "ponto": "Avenida Mariza - Happy Kids",
+    "horarios": ["11:25", "12:25", "14:25", "16:25", "18:18", "20:18"]
+  },
+  {
+    "bairro": "Pioneiros",
+    "ponto": "Avenida Mariza - Imperial Center",
+    "horarios": ["11:27", "12:27", "14:27", "16:27", "18:20", "20:21"]
+  },
+  {
+    "bairro": "Pioneiros",
+    "ponto": "Avenida Mariza - Shopping",
+    "horarios": ["11:28", "12:28", "14:28", "16:28", "18:22", "20:25"]
+  },
+  {
+    "bairro": "Siderurgia",
+    "ponto": "Supermercado Rotor",
+    "horarios": ["11:30", "12:30", "14:30", "16:30", "18:25", "20:30"]
+  },
+  {
+    "bairro": "1º de Maio",
+    "ponto": "Av Ouro Preto - Padaria Sonia",
+    "horarios": ["11:33","12:33","14:33","16:33","18:28","20:33"]
+  }
+]
