@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
+import ReactGA from 'react-ga4'
 import dados from "./data/rotas.json";
 import './App.css'
+
+ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENTS_ID)
+
+ReactGA.send({ hitType: 'pageView', page: window.location.pathname })
 
 function App() {
   const [bairro, setBairro] = useState("");
