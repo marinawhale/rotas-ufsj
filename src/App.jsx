@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
-import ReactGA from 'react-ga4'
+import * as ReactGA from "react-ga4"; // Usando o seletor universal '*'
 import dados from "./data/rotas.json";
-import './App.css'
+import './App.css';
 
-ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENTS_ID)
+const TRACKING_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
-ReactGA.send({ hitType: 'pageView', page: window.location.pathname })
+// Verificação de segurança: só inicializa se o ReactGA existir e tiver o método
+if (TRACKING_ID && ReactGA && typeof ReactGA.initialize === 'function') {
+  ReactGA.initialize(TRACKING_ID);
+} else {
+  console.warn("ReactGA não pôde ser inicializado. Verifique a instalação.");
+}
 
 function App() {
   const [bairro, setBairro] = useState("");
