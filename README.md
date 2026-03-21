@@ -1,5 +1,5 @@
 # 🚌 **COMO CHEGAR NA UFSJ**
-**Consulta de horários das linhas universitárias de forma simples**
+**Consulta de horários das linhas universitárias de Ouro Branco de forma simples**
 ##
 **O que o sistema faz**
 

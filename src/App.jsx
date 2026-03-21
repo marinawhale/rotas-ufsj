@@ -29,16 +29,21 @@ function App() {
 
   function proximoHorario(horarios) {
     const agora = new Date();
+    const diaSemana = agora.getDay();
 
-    return (
-      horarios.find((h) => {
-        const [hora, minuto] = h.split(":");
-        const horario = new Date();
-        horario.setHours(hora, minuto);
+    if (diaSemana === 0 || diaSemana === 6) {
+      return "Os ônibus da linha UFSJ não rodam aos fins de semana :(";
+    }
 
-        return horario > agora;
-      }) || "Não há mais ônibus hoje :("
-    );
+    const horarioEncontrado = horarios.find((h) => {
+      const [hora, minuto] = h.split(":");
+      const horarioBusca = new Date();
+      horarioBusca.setHours(parseInt(hora), parseInt(minuto), 0);
+
+      return horarioBusca > agora;
+    });
+
+    return horarioEncontrado || "Não há mais ônibus hoje :(";
   }
 
   useEffect(() => {
