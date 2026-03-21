@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import * as ReactGA from "react-ga4"; // Usando o seletor universal '*'
+import * as ReactGA from "react-ga4";
 import dados from "./data/rotas.json";
 import './App.css';
 
 const TRACKING_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
-// Verificação de segurança: só inicializa se o ReactGA existir e tiver o método
 if (TRACKING_ID && ReactGA && typeof ReactGA.initialize === 'function') {
   ReactGA.initialize(TRACKING_ID);
 } else {
