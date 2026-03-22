@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -187,12 +188,10 @@ select:focus {
   font-size: 14px;
   font-weight: 600;
 
-  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
+  padding: 15px 25px;
   min-height: 28px;
-  gap: 6px
 }
 
 .footer {
@@ -203,8 +202,8 @@ select:focus {
   color: #e2e8f0;
   text-align: center;
   flex-shrink: 0;
-  
-  position: relative; 
+
+  position: relative;
   left: 0;
   bottom: 0;
 }

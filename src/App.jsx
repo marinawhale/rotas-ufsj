@@ -16,11 +16,14 @@ function App() {
   const [ponto, setPonto] = useState("");
   const [resultados, setResultados] = useState([]);
 
-  const bairros = [...new Set(dados.map((item) => item.bairro))];
+  const bairros = [...new Set(dados.map((item) => item.bairro))].sort((a, b) =>
+    a.localeCompare(b)
+  );
 
   const pontosFiltrados = dados
     .filter((item) => (bairro ? item.bairro === bairro : true))
-    .map((item) => item.ponto);
+    .map((item) => item.ponto)
+    .sort((a, b) => a.localeCompare(b));
 
   function buscar() {
     let filtrados = dados;
@@ -89,14 +92,14 @@ function App() {
           {resultados.map((item, index) => (
             <div key={index} className="card">
               <h3>{item.ponto}</h3>
-              <p><strong>Bairro:</strong>
+              <p><strong>Bairro: </strong>
                 <span>{item.bairro}</span></p>
-              <p><strong>Horários:</strong>
-                <span>{item.horarios.join(", ")}</span></p>
-              <p className="next-bus">
-                <strong>Próximo ônibus:</strong>
+              <p><strong>Horários: </strong>
+                <span>{item.horarios.slice().sort().join(", ")}</span></p>
+              <div className="next-bus">
+                <strong>Próximo ônibus: </strong>
                 <span>{proximoHorario(item.horarios)}</span>
-              </p>
+              </div>
             </div>
           ))}
         </div>
