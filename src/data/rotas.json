@@ -2,12 +2,12 @@
   {
     "bairro": "Centro",
     "ponto": "Rodoviária",
-    "horarios": ["11:10", "12:10", "14:10", "16:10", "18:00", "20:00"]
+    "horarios": ["10:35","11:35","11:10", "12:10","13:50", "14:10", "16:10", "18:00", "20:00"]
   },
   {
     "bairro": "Centro",
     "ponto": "Pasteleão",
-    "horarios": ["11:11","12:11","14:11","16:11","18:01","20:01"]
+    "horarios": ["06:03","10:38","10:54","11:11","12:08","12:11","13:53","14:04","16:04","18:04","14:11","16:11","18:01","20:01"]
   },
   {
     "bairro": "Centro",
@@ -20,6 +20,101 @@
     "horarios": ["11:12", "12:12", "14:12", "16:12", "18:02", "20:06"]
   },
   {
+    "bairro": "Luzia Augusta",
+    "ponto": "Av Macapá - Em frente a Marcenaria Dois Irmãos",
+    "horarios": ["05:46", "10:52", "12:03","14:02","16:02","18:02"]
+  },
+  {
+    "bairro": "Luzia Augusta",
+    "ponto": "Av Augusta Reis Pinto - Supermercado Ouro Branco",
+    "horarios": ["05:47", "10:50", "12:02","14:00","16:00","18:00"]
+  },
+  {
+    "bairro": "Luzia Augusta",
+    "ponto": "Av Augusta Reis Pinto - Escola Cônego Luis",
+    "horarios": ["05:48"]
+  },
+  {
+    "bairro": "Luzia Augusta",
+    "ponto": "Rua João Catarina - Mercearia Elmar",
+    "horarios": ["05:48", "10:48", "12:00","13:59","15:59","17:59"]
+  },
+  {
+    "bairro": "Belvedere",
+    "ponto": "Av Pau Brasil - Próximo a Sorveteria Guará",
+    "horarios": ["05:51"]
+  },
+  {
+    "bairro": "Belvedere",
+    "ponto": "Rua Pinheiro - Próximo ao Clarete",
+    "horarios": ["05:52"]
+  },
+  {
+    "bairro": "Belvedere",
+    "ponto": "Rua Eucalipto - Ponto Ônibus Quadra",
+    "horarios": ["05:58","10:43","11:53","13:56","15:55","17:55"]
+  },
+  {
+    "bairro": "Belvedere",
+    "ponto": "Rua Eucalipto - Sorveteria",
+    "horarios": ["10:40","11:50","13:55","15:50","17:50"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Rua Eduardo Nicomedes",
+    "horarios": ["10:45","11:58","13:58","15:58","17:58"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Rua João Catarina - Posto Tigresa",
+    "horarios": ["06:00"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Pio XII",
+    "horarios": ["11:37"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Praça das Rotas",
+    "horarios": ["06:02"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Rua Santo Antônio - Bradesco",
+    "horarios": ["06:05","10:54","12:09","14:05","16:05","18:05"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Rua Santo Antônio - Policlinica",
+    "horarios": ["06:08"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Rua Santo Antônio - Poli Esportivo",
+    "horarios": ["10:57","12:10","14:07","16:07","18:07"]
+  },
+  {
+    "bairro": "Siderurgia",
+    "ponto": "Concessionárias - EPA",
+    "horarios": ["12:12","14:08","16:08","18:08"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Avenida Mariza - Toca do Leão",
+    "horarios": ["06:10"]
+  },
+  {
+    "bairro": "Centro",
+    "ponto": "Avenida Patriotica - Unopar",
+    "horarios": ["06:13","11:00"]
+  },
+  {
+    "bairro": "Primeiro de Maio",
+    "ponto": "Av Ouro Preto - Entrada Metalurgico/SENAI",
+    "horarios": ["11:14","12:33","14:32","16:32","18:32"]
+  },
+  {
     "bairro": "Siderurgia",
     "ponto": "Av. Consider (Mercadinho Hortão)",
     "horarios": ["11:13", "12:13", "14:13", "16:13", "18:04", "20:07"]
@@ -27,56 +122,61 @@
   {
     "bairro": "Siderurgia",
     "ponto": "Avenida Patriótica - Sindicato dos Metalurgicos",
-    "horarios": ["11:16", "12:16", "14:16", "16:16", "18:07", "20:08"]
+    "horarios": ["06:15","11:01","11:16", "12:16", "14:16", "16:16", "18:07", "20:08"]
   },
   {
     "bairro": "Siderurgia",
     "ponto": "Av Barão de Eschwege - Papelaria RED'S",
-    "horarios": ["11:17", "12:17", "14:17", "16:17", "18:08", "20:09"]
+    "horarios": ["06:18","11:02","11:17", "12:17", "14:17", "16:17", "18:08", "20:09"]
   },
   {
     "bairro": "Pioneiros",
     "ponto": "Av Barão de Eschwege - Padaria Diniz",
-    "horarios": ["11:18", "12:18", "14:18", "16:18", "18:09", "20:11"]
+    "horarios": ["06:19","11:03","11:18", "12:18", "14:18", "16:18", "18:09", "20:11"]
   },
   {
     "bairro": "Pioneiros",
     "ponto": "Av João Monlevade - Alternativa",
-    "horarios": ["11:20", "12:20", "14:20", "16:20", "18:11", "20:13"]
+    "horarios": ["06:22","11:04","11:20","12:20", "14:20", "16:20", "18:11", "20:13"]
   },
   {
     "bairro": "Pioneiros",
     "ponto": "Av João Monlevade - Fio de Seda",
-    "horarios": ["11:22", "12:22", "14:22", "16:22", "18:13", "20:14"]
+    "horarios": ["06:23","11:05","11:22","12:22", "14:22", "16:22", "18:13", "20:14"]
   },
   {
     "bairro": "Inconfidentes",
     "ponto": "Av Cônego Luiz Vieira",
-    "horarios": ["11:23", "12:23", "14:23", "16:23", "18:15", "20:16"]
+    "horarios": ["06:25","11:06","11:23", "12:23", "14:23", "16:23", "18:15", "20:16"]
   },
   {
     "bairro": "Inconfidentes",
     "ponto": "Avenida Mariza - Happy Kids",
-    "horarios": ["11:25", "12:25", "14:25", "16:25", "18:18", "20:18"]
+    "horarios": ["06:27","11:07","11:25", "12:25", "14:25", "16:25", "18:18", "20:18"]
   },
   {
     "bairro": "Pioneiros",
     "ponto": "Avenida Mariza - Imperial Center",
-    "horarios": ["11:27", "12:27", "14:27", "16:27", "18:20", "20:21"]
+    "horarios": ["06:28","11:08","11:27","12:20", "12:27","14:12","16:12","18:12", "14:27", "16:27", "18:20", "20:21"]
   },
   {
     "bairro": "Pioneiros",
     "ponto": "Avenida Mariza - Shopping",
-    "horarios": ["11:28", "12:28", "14:28", "16:28", "18:22", "20:25"]
+    "horarios": ["06:29","11:10","11:28","12:24", "12:28","14:15","16:15","18:15", "14:28", "16:28", "18:22", "20:25"]
   },
   {
     "bairro": "Siderurgia",
     "ponto": "Supermercado Rotor",
-    "horarios": ["11:30", "12:30", "14:30", "16:30", "18:25", "20:30"]
+    "horarios": ["06:30","11:11","11:30","12:28", "12:30","14:20","16:20","18:20", "14:30", "16:30", "18:25", "20:30"]
   },
   {
     "bairro": "1º de Maio",
     "ponto": "Av Ouro Preto - Padaria Sonia",
-    "horarios": ["11:33","12:33","14:33","16:33","18:28","20:33"]
+    "horarios": ["06:38","11:33","11:12","12:30","12:33","14:28","16:28","18:28","20:33"]
+  },
+  {
+    "bairro": "1º de Maio",
+    "ponto": "Av Ouro Preto - Igreja São José Operário",
+    "horarios": ["06:35"]
   }
 ]
